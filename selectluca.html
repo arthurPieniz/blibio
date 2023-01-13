@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="arquivo.js"></script>
+
+    <div class="header">
+        <h1>Biblioteca online</h1>
+    </div>
+    <div class="select">
+        <ul>
+            <li onclick="primeira();return false">
+                <h2 id="title1">Nome da história</h2>
+                <h3 id="desc1">Descrição da história</h3>
+            </li>
+            
+            <li onclick="segunda();return false">
+                <h2 id="title2">Nome da história</h2>
+                <h3 id="desc2">Descrição da história</h3>
+            </li>
+            
+            <li onclick="terceira();return false">
+                <h2 id="title3">Nome da história</h2>
+                <h3 id="desc3">Descrição da história</h3>
+            </li>
+            
+            <li>
+                <h2>Nome da história</h2>
+                <h3>Descrição da história</h3>
+            </li>
+            
+            <li>
+                <h2>Nome da história</h2>
+                <h3>Descrição da história</h3>            
+            </li>
+        
+        </ul>
+    </div>
+    <div class="footer">
+        <a href="selectluca.html">Histórias</a>
+        <a href="perfilluca.html">Perfil</a>
+    </div>
+</body>
+<script>
+    let name = historias.hist1.nome
+    let title = document.getElementById('title1')
+
+    let desc = historias.hist1.descricao
+    let descripion = document.getElementById('desc1')
+
+    let name2 = historias.hist2.nome
+    let title2 = document.getElementById('title2')
+
+    let desc2 = historias.hist2.descricao
+    let descripion2 = document.getElementById('desc2')
+
+    let name3 = historias.hist3.nome
+    let title3 = document.getElementById('title3')
+
+    let desc3 = historias.hist3.descricao
+    let descripion3 = document.getElementById('desc3')
+
+    title.innerHTML = name
+    descripion.innerHTML = desc
+
+    title2.innerHTML = name2
+    descripion2.innerHTML = desc2
+
+    title3.innerHTML = name3
+    descripion3.innerHTML = desc3
+
+    function primeira(){
+        location.href = "tresporcos.html"
+    };
+
+    function segunda(){
+        location.href = "godo.html"
+    }
+
+    function terceira(){
+        location.href = "boni.html"
+    }
+</script>
+</html>

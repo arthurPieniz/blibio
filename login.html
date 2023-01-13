@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Online</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="all">
+    <form>
+        <h1>Login</h1>
+        <input type="text" placeholder="Digite seu nome ou email" autocomplete="off" id="user">
+        <div class="linha"></div>
+        <input type="password" placeholder="Digite sua senha" autocomplete="off" id="senha">
+        <div class="linha"></div>
+        <input type="button" value="Login" onclick="login();return false">
+        <p>Não tem conta? <a onclick="a();return false">Cadastre-se</a></p>
+    </form>
+</div>
+<script src="arquivo.js"></script>
+</body>
+<script>
+    let user = document.getElementById("user")
+    let senha = document.getElementById("senha")
+    
+    function a(){
+        alert("Não foi possivel cadastrar-se.")
+    }
+
+    function login(){
+        if(user.value == ""){
+            alert("Digite seu nome ou email")
+        }else{
+            if(senha.value == ""){
+                alert("Digite sua senha")
+            }else{
+                let nome1 = pessoas.pessoa1.nome;
+                let email1 = pessoas.pessoa1.email;
+                let senha1 = pessoas.pessoa1.senha;
+
+                let nome2 = pessoas.pessoa2.nome;
+                let email2 = pessoas.pessoa2.email;
+                let senha2 = pessoas.pessoa2.senha;
+
+                let nome3 = pessoas.pessoa3.nome;
+                let email3 = pessoas.pessoa3.email;
+                let senha3 = pessoas.pessoa3.senha;
+                
+                let nome4 = pessoas.pessoa4.nome;
+                let email4 = pessoas.pessoa4.email;
+                let senha4 = pessoas.pessoa4.senha;
+
+                let nome5 = pessoas.pessoa5.nome;
+                let email5 = pessoas.pessoa5.email;
+                let senha5 = pessoas.pessoa5.senha;
+
+                if(user.value === nome1 || user.value === email1){
+                    if(senha.value === senha1){
+                        // location.href = "selectclaudio.html"
+                    }else{
+                        alert("Senha ou usuario incorreto(s).")
+                    }
+                }else if(user.value === nome2 || user.value === email2){
+                    if(senha.value === senha2){
+                        location.href = "selectbutui.html"
+                    }else{
+                        alert("Senha ou usuario incorreto(s).")
+                    }
+                }else if(user.value === nome3 || user.value === email3){
+                    if(senha.value === senha3){
+                        location.href = "selectluca.html"
+                    }else{
+                        alert("Senha ou usuario incorreto(s).")
+                    }
+                }else if(user.value === nome4 || user.value === email4){
+                    if(senha.value === senha4){
+                        location.href = "selectbe.html"
+                    }else{
+                        alert("Senha ou usuario incorreto(s).")
+                    }
+                }else if(user.value === nome5 || user.value === email5){
+
+                }
+            }
+        }
+    }
+</script>
+</html>
